@@ -1,15 +1,62 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
 body{
-    background-color: rgb(15, 15, 15);
+    background-color: white;
 }
 
  nav, div{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-flow: row;
+   display: flex;
+   align-items: normal;
+   flex-direction: row;
+   flex-flow: row nowrap;
+   justify-content: space-around;
  }
  
- .busca{
-    background-color: rgb(41, 40, 40);
+.logo{
+   row-gap:20px;
+}
 
+.teclado{
+   position: absolute;
+   right: 80px;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+   padding-left: 5px;
+   opacity: 2;
+   filter: none;
+   mix-blend-mode: normal;
+}
+
+input{
+   border: 0.5px solid rgb(222, 206, 206);
+   opacity: 0.7;
+   font-size: 17px;
+   font-weight: 100;
+   border-radius: 20px 0px 0px 20px;
+   border-right: 0px;
+   width: 500px;
+   padding: 10px;
+   box-shadow: inset 0px 0px 1.5px;
+   justify-content: center;
+}
+
+
+ .lupa{
+   background-color: rgb(248, 244, 244);
+   border: 0.5px solid rgb(222, 206, 206);
+   border-radius: 0px 20px 20px 0px ;
+   padding: 9.3px;
+   width: 70px;
+   justify-content: center;
+ }
+
+ .mic{
+   background-color: rgba(241, 236, 236, 0.785);
+   color: rgba(241, 236, 236, 0.785);
+   border-radius: 150px;
+   padding: 8px 8px;
  }
